@@ -1,8 +1,11 @@
+using Frontend.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddHttpClient(); // Добавление IHttpClientFactory
+builder.Services.AddHttpClient(); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ IHttpClientFactory
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<IApiService, ApiService>();
 
 var app = builder.Build();
 

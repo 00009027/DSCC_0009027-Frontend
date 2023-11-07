@@ -2,34 +2,33 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using Frontend.Service;
 
 namespace Frontend.Controllers
 {
     public class EmployeesController : Controller
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _apiBaseUrl = "http://localhost:7029/api";
+        private readonly IApiService _apiService;
 
-        public EmployeesController(IHttpClientFactory httpClientFactory)
+        public EmployeesController(IApiService apiService)
         {
-            _httpClient = httpClientFactory.CreateClient();
+            _apiService = apiService;
         }
 
         // GET: Employees
         public async Task<IActionResult> Index()
         {
-            var response = await _httpClient.GetAsync($"{_apiBaseUrl}/employees");
-            response.EnsureSuccessStatusCode();
-            var content = await response.Content.ReadAsStringAsync();
-            var employees = JsonSerializer.Deserialize<List<Employee>>(content);
+            var employees = await _apiService.GetAllEmployees();
             return View(employees);
+
         }
  
 
         // GET: EmployeesController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            return View();
+            var employee = await _apiService.GetEmployeeById(id);
+            return View(employee);
         }
 
         // GET: EmployeesController/Create
@@ -40,59 +39,76 @@ namespace Frontend.Controllers
 
         // POST: EmployeesController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create(string Name, string PhoneNumber, string Email, string Department)
         {
-            try
+            // Create a new post object
+            var employee = new EmployeeDto
             {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                Name = Name,
+                PhoneNumber = PhoneNumber,
+                Email = Email,
+                Department = Department
+            };
+
+            // Call your API to create the post
+            await _apiService.CreateEmployee(employee);
+
+            // Redirect back to the Index page
+            return RedirectToAction(nameof(Index));
+
         }
 
         // GET: EmployeesController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            return View();
+            var employee = await _apiService.GetEmployeeById(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+        
+            var employeeUpdateDto = new EmployeeUpdateDto
+            {
+                Name = employee.Name,
+                PhoneNumber = employee.PhoneNumber,
+                Email = employee.Email,
+                Department = employee.Department
+            };
+        
+            return View(employeeUpdateDto);
         }
 
         // POST: EmployeesController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(EmployeeUpdateDto employeeUpdateDto)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                return View(employeeUpdateDto);
             }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: EmployeesController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+            // Call your API to update the post
+            await _apiService.UpdateEmployee(employeeUpdateDto.Id, employeeUpdateDto);
 
+            // Redirect back to the list of posts or details page
+            return RedirectToAction(nameof(Index)); // or Details page
+        }
+        
         // POST: EmployeesController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> Delete(int id)
         {
-            try
+            var employee = await _apiService.GetEmployeeById(id);
+            if (employee == null)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
-            {
-                return View();
-            }
+
+            // Call your API to delete the post
+            await _apiService.DeleteEmployeeById(id);
+
+            // Redirect back to the list of posts
+            return RedirectToAction(nameof(Index));
         }
     }
 }

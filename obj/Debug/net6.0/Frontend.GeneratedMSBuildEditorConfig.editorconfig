@@ -5,61 +5,56 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Frontend
 build_property.RootNamespace = Frontend
-build_property.ProjectDir = C:\Users\khaki\OneDrive\Рабочий стол\dscc.coursework-frontend\Frontend\
+build_property.ProjectDir = /Users/sakhib/Developer/00010023/dcc-ff/Frontend/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\khaki\OneDrive\Рабочий стол\dscc.coursework-frontend\Frontend
+build_property.MSBuildProjectDirectory = /Users/sakhib/Developer/00010023/dcc-ff/Frontend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Employees/create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXGNyZWF0ZS5jc2h0bWw=
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Employees/create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL2NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Employees/delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXGRlbGV0ZS5jc2h0bWw=
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Employees/details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL2RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Employees/details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXGRldGFpbHMuY3NodG1s
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Employees/edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL2VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Employees/edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXGVkaXQuY3NodG1s
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Employees/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL2luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Employees/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXGluZGV4LmNzaHRtbA==
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/khaki/OneDrive/Рабочий стол/dscc.coursework-frontend/Frontend/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-8fgarvx963
+[/Users/sakhib/Developer/00010023/dcc-ff/Frontend/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8eyyemcag2
